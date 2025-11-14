@@ -1,0 +1,16 @@
+C# 
+
+É uma linguagem fortemente tipada (int nome = "Fernando"; - necessário inserir o tipo de dado antes da atribuição e ele não pode ser alterado -).
+
+Linguagem compilada, onde o código fonte é traduzido para linguagem de máquina antes da execução. A compilação pode ser feita em C# por meio da IL (Common Intermediate Language), onde o compilador analisa o código, verifica erros de sintaxe e semântica e traduz o código para IL (ou MSIL).
+
+Organização do código -> 
+
+	i) C# é orientado a objetos, logo, haverão classes moldando o código (com uma classe Main() por final.
+
+	ii) Namespaces são utilizados para agrupar as classes relacionadas, evitando que diversas classes fiquem 	'espalhadas' no código fonte.
+
+
+
+
+

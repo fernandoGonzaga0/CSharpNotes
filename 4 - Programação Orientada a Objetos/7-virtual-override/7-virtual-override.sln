@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-virtual-override", "7-virtual-override\7-virtual-override.csproj", "{0CC03FCE-EDB3-4F39-9395-BC87DEA24BEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CC03FCE-EDB3-4F39-9395-BC87DEA24BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC03FCE-EDB3-4F39-9395-BC87DEA24BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC03FCE-EDB3-4F39-9395-BC87DEA24BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC03FCE-EDB3-4F39-9395-BC87DEA24BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {720945CE-392A-4D28-80E9-F5ACAB6F0EB3}
+	EndGlobalSection
+EndGlobal

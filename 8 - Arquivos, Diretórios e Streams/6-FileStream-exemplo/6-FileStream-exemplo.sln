@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-FileStream-exemplo", "6-FileStream-exemplo\6-FileStream-exemplo.csproj", "{DC19BA58-8BDB-4653-AB57-C7D9CCC0D7DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC19BA58-8BDB-4653-AB57-C7D9CCC0D7DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC19BA58-8BDB-4653-AB57-C7D9CCC0D7DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC19BA58-8BDB-4653-AB57-C7D9CCC0D7DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC19BA58-8BDB-4653-AB57-C7D9CCC0D7DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0251DB2E-76F0-45BF-8044-68A785AD43FC}
+	EndGlobalSection
+EndGlobal

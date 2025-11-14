@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36616.10 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-assinatura-do-metodo", "10-assinatura-do-metodo\10-assinatura-do-metodo.csproj", "{BBF1E00D-57AE-42AF-B0FB-6F98A38E0F27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF1E00D-57AE-42AF-B0FB-6F98A38E0F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF1E00D-57AE-42AF-B0FB-6F98A38E0F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF1E00D-57AE-42AF-B0FB-6F98A38E0F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF1E00D-57AE-42AF-B0FB-6F98A38E0F27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72AD3E76-EC9C-4FDC-86DC-63875E20A7E4}
+	EndGlobalSection
+EndGlobal
