@@ -15,8 +15,8 @@ Main() é um método frequentemente utilizado. A sintaxe de métodos/funções �
 
         }
 
-void = significa que o método não possui um retorno válido.
 static = significa que o método pertence à classe Program e não à um objeto da classe Program e não precisa ser instanciado para ser chamado
+void = significa que o método não possui um retorno válido.
 
 */
 

@@ -1,7 +1,7 @@
 ﻿/*
 
 OPERADORES MATEMÁTICOS
- 
+
 Operator	Name	        Description	                                Example	
 
 +	        Addition	    Adds together two values	                x + y	

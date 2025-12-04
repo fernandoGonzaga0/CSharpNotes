@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-programacao-assincrona-exercicio", "6-programacao-assincrona-exercicio\6-programacao-assincrona-exercicio.csproj", "{DB03460E-0F06-438A-A103-FBB611D04987}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB03460E-0F06-438A-A103-FBB611D04987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB03460E-0F06-438A-A103-FBB611D04987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB03460E-0F06-438A-A103-FBB611D04987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB03460E-0F06-438A-A103-FBB611D04987}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D10A636C-288F-48CE-9812-FEC904057C02}
+	EndGlobalSection
+EndGlobal

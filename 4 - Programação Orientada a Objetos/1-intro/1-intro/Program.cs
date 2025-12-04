@@ -24,4 +24,5 @@ A solução contrária à POO é a Programação procedural, que consiste em exe
     Polimorfismo (muitas formas): é a habilidade de objetos distintos responderem a mesma mensagem de sua própria maneira.
         
             Ex -> usar private na criação de classes, componentes, strucs, etc.
+
 */

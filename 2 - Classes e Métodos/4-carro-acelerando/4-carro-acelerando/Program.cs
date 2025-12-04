@@ -11,10 +11,21 @@ public class Carro
 
     public void Acelerar(string nome) // atribuindo nome para informar qual carro está acelerando
     {
-        Console.WriteLine($"O carro {nome} está acelerando...");
+        Console.WriteLine($"O carro {nome} está acelerando...\n");
+    }
+
+    public void ExibirDados (string nome, string modelo, string montadora, string marca, int ano, int potencia)
+    {
+        Console.WriteLine($"Especificações do carro:\n" +
+                            $"Nome: {nome}\n" +
+                            $"$\"Modelo: {modelo}\n" +
+                            $"$\"Montadora: {montadora}\n" +
+                            $"$\"Marca: {marca}\n" +
+                            $"$\"Ano: {ano}\n" +
+                            $"$\"Potência: {potencia}\n");
+
     }
 }
-
 
 class Program
 {
@@ -28,14 +39,8 @@ class Program
         chevrolet.marca = "Onix";
         chevrolet.ano = 2023;
         chevrolet.potencia = 400;
-        Console.WriteLine($"Especificações do carro:\n" +
-            $"Nome: {chevrolet.nome}\n" +
-            $"$\"Modelo: {chevrolet.modelo}\n" +
-            $"$\"Montadora: {chevrolet.montadora}\n" +
-            $"$\"Marca: {chevrolet.marca}\n" +
-            $"$\"Ano: {chevrolet.ano}\n" +
-            $"$\"Potência: {chevrolet.potencia}\n");
 
+        chevrolet.ExibirDados(chevrolet.nome, chevrolet.modelo, chevrolet.montadora, chevrolet.marca, chevrolet.ano, chevrolet.potencia);
         chevrolet.Acelerar(chevrolet.nome);
 
         // objeto 2
@@ -46,14 +51,8 @@ class Program
         ford.marca = "EcoSport";
         ford.ano = 2018;
         ford.potencia = 120;
-        Console.WriteLine($"\n\nEspecificaçÕes do carro:\n" +
-            $"Nome: {ford.nome}\n" +
-            $"$\"Modelo: {ford.modelo}\n" +
-            $"$\"Montadora: {ford.montadora}\n" +
-            $"$\"Marca: {ford.marca}\n" +
-            $"$\"Ano: {ford.ano}\n" +
-            $"$\"Potência: {ford.potencia}\n");
 
+        ford.ExibirDados(ford.nome, ford.modelo, ford.montadora, ford.marca, ford.ano, ford.potencia);
         ford.Acelerar(ford.nome);
     }
 }

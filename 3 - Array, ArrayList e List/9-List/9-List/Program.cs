@@ -2,7 +2,7 @@
 
 List -> É uma coleção de objetos fortemente tipados que podem ser acessados usando um índice que inicia em zero, e possui métodos para classificar, 
 pesquisar, modificar e manipular listas.
- 
+
 */
 
 using System;
@@ -19,7 +19,7 @@ List<string> nomes = new();
     nomes.Add("Paulo");
 
     // AddRange(ICollection) -> adiciona a coleção de elementos ao final da lista
-    // InsertRange(int index, ICollection) -> adicioina a coleção de elemntos na lista na posição do índice especificado
+    // InsertRange(int index, ICollection) -> adicioina a coleção de elementos na lista na posição do índice especificado
 
 // Removendo elementos
 

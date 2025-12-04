@@ -6,7 +6,7 @@ Ex: no exemplo abaixo, vamos criar um objeto da classe Aluno e atribuir valores 
 e passar os valores para o método.
  
 */
-namespace Curso;
+
 public class Aluno
 {
     public string? Nome;

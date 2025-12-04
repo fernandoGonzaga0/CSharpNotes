@@ -1,15 +1,15 @@
 ﻿public class Aluno // classe aluno
 {
+    public string? Nome;   // 3 componentes utilizados na classe
+    public int Idade;
+    public string? Sexo;
+
     public Aluno(string nome, int idade, string sexo)  //   <--- construtor padrão com 3 parâmetros
     {
         Nome = nome;
         Idade = idade;
         Sexo = sexo;
     }
-
-    public string? Nome;   // 3 componentes utilizados na classe
-    public int Idade;
-    public string? Sexo;
 }
 
 class Program

@@ -42,7 +42,4 @@ class Program
             figura.Desenhar();
         }
     }
-    }
-
-
-
+}

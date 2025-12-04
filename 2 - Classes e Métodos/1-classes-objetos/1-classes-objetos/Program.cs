@@ -7,7 +7,7 @@ Ex: a classe Pessoa cria um molde que utilizaremos para criar diversas pessoas (
 
                                                             oBJETOS
 
-Um objeto é uma instância de uma classe, criado pelo operador new e todos os meobros da classe (campos) podem ser acessados através do objeto 
+Um objeto é uma instância de uma classe, criado pelo operador new e todos os membros da classe (campos) podem ser acessados através do objeto 
 
 */
 
@@ -17,14 +17,12 @@ public class Pessoa // classe pública = pode ser acessada/instanciada por qualq
     public string? nome; // interrogação valida se a variável será nula ou não. Por uma string ser um tipo de referência, ela pode armazenar um null. Estamos avisando ao compilador que ela pode ser nula.
     public int idade;
     public string? sexo;
-
-   
 }
 
 // OBS -> na classe acima foram usados duas vertentes da POO:
 
 // abstração (por comprimirmos campos na classe como nome/idade/sexo, que são elementos reais de uma pessoa de fato);
-// encapsulamento -> encapsulamos os campos abstratos na classe Cachorro;
+// encapsulamento -> encapsulamos os campos abstratos na classe Pessoa;
 
 public class Program
 {
@@ -38,6 +36,3 @@ public class Program
         Console.WriteLine($"{p1.nome}, {p1.idade}, {p1.sexo}");
     }
 }
-
-
-

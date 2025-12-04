@@ -1,4 +1,4 @@
-﻿// Classe array fornece métodos para criar, manipular pesquisar e classificar arrays
+﻿// Classe array fornece métodos para criar, manipular, pesquisar e classificar arrays
 
 // Reverse - inverte a sequência de um array unidimensional -> array.Reverse(nome_array);
 

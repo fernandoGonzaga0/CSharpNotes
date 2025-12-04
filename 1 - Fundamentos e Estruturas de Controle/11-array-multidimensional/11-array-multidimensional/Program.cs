@@ -6,7 +6,6 @@ São usados para trabalhar com arrays de forma tabular, com linhas e colunas de 
  
 */
 
-
 using System;
 
 class Program
