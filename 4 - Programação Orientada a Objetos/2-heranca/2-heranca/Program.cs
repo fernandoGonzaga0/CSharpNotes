@@ -9,7 +9,6 @@ class Program
 {
     static void Main()
     {
-
         // criando aluno com campos da classe Aluno e da classe pai Pessoa
         Aluno aluno1 = new();
         aluno1.Nome = "Fernando";

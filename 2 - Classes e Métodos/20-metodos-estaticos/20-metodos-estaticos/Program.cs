@@ -5,7 +5,7 @@ Os métodos estáticos pertencem à classe e não ao objeto.
 
 static pode ser usado em -> classes, interfaces, structs, campos, métodos, propriedades, operadores, eventos, construtores
 
-Resumo: um método, variável ou propriedade marcada com static pode ser acessada diretamente pela classe, sem precisar criar um objeto.
+Resumo: um método, variável ou propriedade marcada com static, pode ser acessada diretamente pela classe, sem precisar criar um objeto.
  
 */
 
@@ -27,6 +27,7 @@ class Calculadora
     {
         int resultado1 = Calculadora.Somar(4, 2); // Somar é um método com static, aqui conseguimos acessar ele diretamente pela classe, sem criar objeto
 
-        int resultado2 = Calculadora.Subtrair(4, 2); // o erro acontece por Subtrair ser um método não estático, necessitando então que seja criado o objeto
+        Calculadora resultado3 = new Calculadora(); // se não usarmos um método estático como em Subtrair, é necessário instanciar a classe e depois aplicar o método
+        resultado3.Subtrair(4, 2);
     }
 }

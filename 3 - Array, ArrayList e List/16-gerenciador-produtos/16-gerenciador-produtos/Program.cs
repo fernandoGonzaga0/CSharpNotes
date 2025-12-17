@@ -13,7 +13,7 @@ public class Program
         produtos.Add(new Produto(2, "Geladeira Eletrolux", "Eletrodoméstico", 4799, 12));
         produtos.Add(new Produto(3, "Fogão Eletrolux", "Eletrodoméstico", 1299, 6));
         produtos.Add(new Produto(4, "Armário de madeira", "Móveis", 579, 7));
-        produtos.Add(new Produto(5, "Chuveiro", "Eletrodoméstico", 325, 10));
+        produtos.Add(new Produto(5, "Chuvei3ro", "Eletrodoméstico", 325, 10));
         produtos.Add(new Produto(6, "Grade de janela", "Metais", 129, 4));
 
         Console.WriteLine("Listando produtos:\n");
