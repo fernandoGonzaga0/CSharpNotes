@@ -1,4 +1,6 @@
-﻿public class Aluno // classe aluno
+﻿// em C# é possível passar parâmetros para um construtor, tornando-o mais seguro e especificando quais tipos de dados podem ser inseridos na instanciação da classe
+
+public class Aluno // classe aluno
 {
     public string? Nome;   // 3 componentes utilizados na classe
     public int Idade;

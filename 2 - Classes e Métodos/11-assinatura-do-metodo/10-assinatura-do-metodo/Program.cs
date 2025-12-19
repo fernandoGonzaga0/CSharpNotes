@@ -1,9 +1,13 @@
 ﻿/*
+
+A assinatura de um método é uma identificação exclusiva de um método para o compilador C#.
  
 A sobrecarga de métodos acontece quando temos diversos métodos com mesmo nome, porém se diferenciando em número de parâmetros, tipos, ordem dos parâmetros, etc).
 
-Ex: criarei uma classe com diversos métodos com mesmo nome, porém com suas características diferentes
- 
+O tipo de retorno de um método não faz parte da assinatura do método.
+
+Ex: criarei uma classe com diversos métodos com mesmo nome, porém com assinaturas diferentes (número/tipo/ordem de parâmetros diferentes)
+
 */
 
 public class Email

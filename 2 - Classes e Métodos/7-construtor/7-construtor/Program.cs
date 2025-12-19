@@ -1,7 +1,7 @@
 ﻿/*
 
 Os contrutores são tipos especiais de métodos usados para criar e inicializar objetos de uma classe.
- 
+
 Na linguagem C# toda a classe precisa de um construtor para ser instanciada (caso não seja criado, o C# possui um construtor padrão para a classe)
 
 Sempre que uma classe for instanciada usando a palavra new, o seu construtor é chamado. 
@@ -13,16 +13,19 @@ OBS:
 
 Ex de construtor padrão: 
 
-    public class Aluno;
-        
+*/
+
+public class Aluno
+{
+    public Aluno() { } // construtor padrão vazio (não há necessidade de inserir essa linha, esse já é o comportamento padrão do construtor
+    public string Nome;
+    public int Idade;
+}
+
+public class Program
+{
+    public static void Main()
     {
-        public Aluno();      <---- esse é o construtor, com mesmo nome da classe e sem retorno (quando passado sem parâmetros, serão atribuidos valores padrão -> int = 0; string = null; double = 0...)
-
-        public string Nome;
-        public int Idade; 
-        .... //
+        Aluno aluno = new Aluno();
     }
-
-    Aluno aluno1 = new Aluno() <--- quando criamos o objeto, o construtor padrão é chamado trazendo os valores estabelecidos na classe (se estiver vazio, traz valores padrão ^)
- 
- */
+}

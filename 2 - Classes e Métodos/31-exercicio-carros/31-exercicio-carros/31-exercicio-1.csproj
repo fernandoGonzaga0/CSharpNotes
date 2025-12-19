@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_11_gerenciamento_de_livros</RootNamespace>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>_31_exercicio_carros</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>

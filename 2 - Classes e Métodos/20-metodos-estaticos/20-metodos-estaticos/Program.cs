@@ -1,4 +1,4 @@
-﻿/*
+﻿ /*
 Métodos estáticos são métodos que não dependem de um objeto. Ou seja, não dependem da criação de uma instância da classe para serem acessados.
 
 Os métodos estáticos pertencem à classe e não ao objeto.
@@ -6,7 +6,7 @@ Os métodos estáticos pertencem à classe e não ao objeto.
 static pode ser usado em -> classes, interfaces, structs, campos, métodos, propriedades, operadores, eventos, construtores
 
 Resumo: um método, variável ou propriedade marcada com static, pode ser acessada diretamente pela classe, sem precisar criar um objeto.
- 
+
 */
 
 // Exemplo

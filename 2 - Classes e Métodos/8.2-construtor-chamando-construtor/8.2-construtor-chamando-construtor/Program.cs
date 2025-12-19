@@ -1,4 +1,6 @@
-﻿// CONSTRUTOR CHAMANDO CONSTRUTOR
+﻿// Construtor encadeado permite que um construtor chame outro dentro da mesma classe usando a palavra-chave this(...)
+
+// Isso pode ser últil para evitar repetição de código (ex: um construtor possui 3 parâmetros, outro construtor possui 4 sendo 3 desses os mesmos parâmetros do primeiro construtor, podemos usar this para referenciá-lo)
 
 public class Aluno
 {
@@ -31,4 +33,3 @@ class Program
         Aluno aluno1 = new("Fernando", 25, "Masculino", "Sim"); // estamos utilizando o segundo construtor. Ele referencia o construtor 1 para obtermos o nome do aluno
     }
 }
-

@@ -1,10 +1,6 @@
-﻿// CRIANDO MAIS DE UM CONSTRUTOR NA CLASSE
-
-/*
-OBS: relação entre os 4 componentes e os 2 construtores
-
-A relação entre eles é de inicialização do estado -> 
-*/
+﻿// em C#, se for necessário é possível ter mais de um construtor na mesma classe, cada um com parâmetros diferentes
+// Ex: sistema de cadastro de alunos, que em momentos diferentes solicitará certas informações partindo da mesma classe (em uma tela você pode pedir apenas o nome e idade, 
+// em outra tela pedir apenas o sexo, etc.
 
 public class Aluno
 {

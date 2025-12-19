@@ -10,6 +10,7 @@ Se o tipo de retorno (listado antes do nome do método) não for void, o método
 
 public class Somar
 {
+    // esse método tem como retorno um int
     public int Soma(int numero1, int numero2)
     {
         return numero1 + numero2; // criamos o retorno sendo uma soma
@@ -26,5 +27,4 @@ class Program
 
         Console.WriteLine(valor); // valor da soma entre 2 e 5 -> 7
     }
-    
 }

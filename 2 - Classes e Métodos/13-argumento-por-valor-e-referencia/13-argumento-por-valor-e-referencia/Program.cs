@@ -1,7 +1,6 @@
 ﻿// OBS -> Para executar, comentar uma das classes pois existem métodos Main em cada uma delas
 
-
-//Em C# é possível passar argumentos para parâmetros de duas formas:
+// Em C# é possível passar argumentos para parâmetros de duas formas:
 
 // 1) por valor (padrão do C#) -> uma cópia do valor do argumento é feita e passada para o parâmetro do método chamado.
 
