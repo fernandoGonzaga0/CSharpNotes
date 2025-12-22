@@ -18,11 +18,11 @@ List<string> nomes = new();
 
 // Adicionando na list
 
-// add -> adiciona no final
-nomes.Add("Fernando");
-nomes.Add("Maria");
-nomes.Add("Sara");
-nomes.Add("Paulo");
+    // add -> adiciona no final
+    nomes.Add("Fernando");
+    nomes.Add("Maria");
+    nomes.Add("Sara");
+    nomes.Add("Paulo");
 
     // AddRange(ICollection) -> adiciona a coleção de elementos ao final da lista
     // InsertRange(int index, ICollection) -> adicioina a coleção de elementos na lista na posição do índice especificado

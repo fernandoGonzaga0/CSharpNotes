@@ -1,7 +1,7 @@
 ﻿/*
 Struct é um tipo de valor em C#. Usado geralmente para agrupar dados relacionados, como campos e métodos, em um único tipo. 
 
-Estruturas são ideais para representar objetos pequenos e imutáveis, como coordenadas, pontos no espaço, cores, etc.
+Structs são ideais para representar objetos pequenos e imutáveis, como coordenadas, pontos no espaço, cores, etc.
 
 Ficam armazenadas na memória stack (menor tamanho e custo operacional - são como classes mais leves).
 
@@ -41,5 +41,4 @@ class Program
 
         Console.ReadKey();
     }
-
 }
