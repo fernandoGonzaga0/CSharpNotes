@@ -37,7 +37,7 @@ public class Program
 {
     public static void Main()
     {
-        // Forma forma = new Forma(); -> retorna erro, já que não podemos instanciar classes abstract
+        // Forma formas = new Forma(); -> retorna erro, já que não podemos instanciar classes abstract
 
         Quadrado q = new(); // quem eu chamo é sempre a classe derivada, e nunca a classe abstract base
         Console.WriteLine(q.Descricao());

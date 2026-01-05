@@ -8,7 +8,7 @@ A diferença é que aqui, a classe pai independe das classes filhas, onde sua ex
 
 Ex: supondo que tenha uma classe Professor e outra classe Departamento (no momento, departamento é o todo). Nesse cenário, a classe Professor não depende
 de Departamento para existir, mas métodos e propriedades de Professor são usados em Departamento para construir algo.
- 
+
 -> Um Departamento pode ter vários Professores, mas os Professores podem existir fora do Departamento. Isso é agregação.
 
  */

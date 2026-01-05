@@ -1,38 +1,46 @@
 ﻿/*
 
-A composição e agregação são técnicas de programação que permitem que uma classe 'contenha' um ou mais objetos de outras classes para formar um grande
-objeto realizando alguma funcionalidades específicas. 
+Tipos de relacionamentos entre classes -> 
 
-O contêiner é a classe pai e as classes contidas na superclasse são classes filhas, esse relacionamento é do tipo "tem-um". A herança, por exemplo, é do 
-tipo de relacionamento 'é-um'.
+                                            i  - é um (herança);
+                                            ii - tem um (composição e agregação);
 
-Composição é um princípio da programação orientada a objetos onde uma classe possui uma ou mais instâncias de outras classes como parte de sua estrutura. 
-Em vez de herdar comportamentos, ela usa outros objetos para realizar tarefas. Em outras palavras: "tem um" é diferente de "é um".
- 
+Representa uma associação onde o objeto composto NÃO EXISTE sem o objeto principal (relação forte).
+
+Ex: a classe Carro contém referências às classes Motor e Pneu. Com isso, podemos escolher quais métodos/propriedades serão enviadas à classe composta, 
+ao invés de herdar todas as funcionalidades das classes. Porém, as classes Motor e Pneu dependem diretamente da classe Carro. Se a casa fosse destruída, 
+elas também seriam.
+
  */
 
-// Ex: a classe Casa contém referências às classes Telhado e Alicerce. Com isso, podemos escolher quais métodos/propriedades serão enviadas 
-// à classe composta, ao invés de herdar todas as funcionalidades das classes. 
-
-public class Casa
+public class Motor
 {
-    private readonly Telhado _telhado;
-    private readonly Alicerce _alicerce;
+    public void Ligar() => Console.WriteLine("Motor ligado!");
+}
 
-    public Casa()
+public class Pneu
+{
+    public void Aquecendo() => Console.WriteLine("Pneus aquecendo...");
+}
+
+public class Carro
+{
+    private Motor motor = new Motor(); // criado dentro do carro
+    private Pneu pneu = new Pneu(); // criado dentro do carro
+
+    public void LigarCarro()
     {
-        _telhado = new Telhado();
-        _alicerce = new Alicerce();
+        motor.Ligar();
+        pneu.Aquecendo();
+        Console.WriteLine("Motor ligado e pneus aquecendo.");
     }
-
 }
 
-public class Telhado
+public class Program
 {
-    //
-}
-
-public class Alicerce
-{
-    //
+    static void Main()
+    {
+        Carro carro1 = new();
+        carro1.LigarCarro();
+    }
 }

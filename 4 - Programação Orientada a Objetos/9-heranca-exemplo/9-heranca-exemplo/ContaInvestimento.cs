@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _9_heranca_exemplo;
+﻿namespace _9_heranca_exemplo;
 
 public class ContaInvestimento : ContaCorrente // herdando as configurações de conta corrente, usada como base nesse cenário 
 {

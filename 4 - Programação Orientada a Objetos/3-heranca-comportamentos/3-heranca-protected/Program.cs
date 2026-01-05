@@ -47,5 +47,4 @@ public class ClasseBase
     {
         Console.WriteLine("ClasseBase - Método private");
     }
-
 }

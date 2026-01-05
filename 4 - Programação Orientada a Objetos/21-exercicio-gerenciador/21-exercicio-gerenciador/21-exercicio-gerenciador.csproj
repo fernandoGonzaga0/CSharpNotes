@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_11_downcasing_upcasting</RootNamespace>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>_21_exercicio_gerenciador</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>

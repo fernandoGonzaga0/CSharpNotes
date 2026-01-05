@@ -2,20 +2,10 @@
 
 // Use o modificador virtual na declaração do membro da classe base para permitir que ele sofra alterações partindo da classe derivada
 
-// gato
-Gato gato1 = new();
-gato1.Nome = "Frajola";
-gato1.ExibeNome();
-
-// cachorro 
-Cachorro cachorro1 = new();
-cachorro1.Nome = "Duck";
-cachorro1.ExibeNome();
-
 class Animal // classe base
 {
     public string? Nome {  get; set; }
-    public virtual void ExibeNome()   // virtual está sinalizando que esse método será sobrescrio em alguns cenários, onde haver override
+    public virtual void ExibeNome()   // virtual está sinalizando que esse método pode ser sobrescrito em alguns cenários, onde haver override
     {
         Console.WriteLine($"Meu nome é {Nome}");
     }
@@ -34,3 +24,18 @@ class Cachorro : Animal
     // está herdando todas as informações de Animal, apenas
 }
 
+class Program
+{
+    public static void Main()
+    {
+        // gato
+        Gato gato1 = new();
+        gato1.Nome = "Frajola";
+        gato1.ExibeNome();
+
+        // cachorro 
+        Cachorro cachorro1 = new();
+        cachorro1.Nome = "Duck";
+        cachorro1.ExibeNome();
+    }
+}

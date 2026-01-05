@@ -7,8 +7,6 @@ class Program
         Aluno aluno1 = new(); // essa chamada pega apenas o construtor da classe Aluno SEM parâmetro e o construtor da classe Pessoa SEM parâmetro
 
         Aluno aluno2 = new("Fernando"); // construtor da classe Pessoa SEM parâmetro e da classe Aluno COM parâmetro
-
-       
     }
 }
 

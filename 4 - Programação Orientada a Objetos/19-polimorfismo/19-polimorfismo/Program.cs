@@ -7,7 +7,7 @@ Ele permite que objetos de diferentes classes sejam tratados como objetos de uma
 TIPOS
 
 1) Polimorfismo em tempo de compilação -> utiliza a sobrecarga de métodos e operadores sendo também chamado de ligação precoce (early binding). A utilização
-da sobrecarga (overloading) de métdos realiza a tarefa cm distintos parâmetros de entrada. Permite que classes forneçam diferentes implementações de métodos
+da sobrecarga (overloading) de métdos realiza a tarefa com distintos parâmetros de entrada. Permite que classes forneçam diferentes implementações de métodos
 que são chamados pelo mesmo nome.
 
 2) Polimorfismo em tempo de execução -> pode ser feito usando herança e métodos virtuais. Quando sobrescrevemos (override) os métodos virtuais estamos alterando

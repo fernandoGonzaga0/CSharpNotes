@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _9_heranca_exemplo;
+﻿namespace _9_heranca_exemplo;
 
 // conta corrente será a conta BASE, servindo para ser herdada em contas derivadas
 
