@@ -20,7 +20,7 @@ Principais métodos:
     ContainsValue - Determina se o Dicionary atual contém o valor especificado
     Remove - Remove o valor com a chave especificada
     TryGetValue - Obtém o valor associado à chave especificada. Se não existir retorna o valor padrão para o tipo do parâmetro TValue.
- 
+
 */
 
 // Dicionário de números pares, com chave crescente e valor contendo os pares

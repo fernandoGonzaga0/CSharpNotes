@@ -1,4 +1,4 @@
-﻿// GetHashCode e Equals são métdos da classe Object usados para comparar se dois objetos são iguais.
+﻿// GetHashCode e Equals são métodos da classe Object usados para comparar se dois objetos são iguais.
 
 // Todos objetos na linguagem C# herdam de Object e assim herdam os métodos GetHashCde e Equals.
 

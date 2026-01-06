@@ -1,11 +1,11 @@
 ﻿/*
- 
+
 Criar uma classe Genérica que deverá ser implementada de acordo com os seguintes requisitos:
 
 i) ser um array genérico de uma dimensão de tamanho igual a 5;
 ii) possuir um método Adicionar() responsável por adicionar qualquer tipo de objetos no array;
 iii) Possuir uma propriedade Indexer como uma implementação para um laço for (usar conceito de indexador).
- 
+
 */
 
 public class ClasseGenerica<T>  // T pode ser qualquer tipo de dado

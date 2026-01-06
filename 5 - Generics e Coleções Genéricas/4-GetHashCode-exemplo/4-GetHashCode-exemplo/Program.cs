@@ -1,19 +1,12 @@
-﻿// Definir uma implementação personalizada para Equals e GetHashCode de forma a comparar se objetos da classe Pessoa são iguais com base na propriedade CPF.
+﻿/*
 
+Os métodos Equals e GetHashCode podem ser sobrescritos conforme a necessidade. Por padrão, um código Hash é gerado para cada componente no projeto, independente de seu valor.
 
-var pessoa1 = new Pessoa(0512245, "Fernando");
-var pessoa2 = new Pessoa(0512245, "Fernando");
-var pessoa3 = new Pessoa(2416878, "Fernando");
+    Ex: pessoas com mesmo CPF possuem, por padrão, o mesmo Hash se não for configurado.
 
-Console.WriteLine("\nComparando objetos Pessoa - GetHashCode");
-Console.WriteLine("pessoa1 = " + pessoa1.GetHashCode());
-Console.WriteLine("pessoa2 = " + pessoa2.GetHashCode());
-Console.WriteLine("pessoa3 = " + pessoa3.GetHashCode());
-
-Console.WriteLine("\nComparando objetos Pessoa - Equals");
-Console.WriteLine("pessoa1.Equals(pessoa2)" + pessoa1.Equals(pessoa2));
-Console.WriteLine("pessoa2.Equals(pessoa3)" + pessoa2.Equals(pessoa3));
-Console.WriteLine("pessoa1.Equals(pessoa3)" + pessoa1.Equals(pessoa3));
+Objetivo: definir uma implementação personalizada para Equals e GetHashCode de forma a comparar se objetos da classe Pessoa são iguais com base na propriedade CPF. 
+ 
+*/
 
 public class Pessoa
 {
@@ -39,12 +32,35 @@ public class Pessoa
         {
             return false;
         }
-        var other = (Pessoa) obj; // other nesse caso é o objeto que queremos comparar com o primeiro. other aqui está convertendo o objeto obj no TIPO de dado utilizado
+
+        // other nesse caso é o objeto que queremos comparar com o primeiro. other aqui está convertendo o objeto obj no TIPO de dado utilizado
+        var other = (Pessoa) obj; // essa conversão de obj para o tipo de dado (uma classe, no caso) é conhecida como downcasting
+
         return CPF.Equals(other.CPF);
     }
 
     public override int GetHashCode()
     {
         return CPF.GetHashCode();
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        var pessoa1 = new Pessoa(0512245, "Fernando");
+        var pessoa2 = new Pessoa(0512245, "Fernando");
+        var pessoa3 = new Pessoa(2416878, "Fernando");
+
+        Console.WriteLine("\nComparando objetos Pessoa - GetHashCode");
+        Console.WriteLine("pessoa1 = " + pessoa1.GetHashCode());
+        Console.WriteLine("pessoa2 = " + pessoa2.GetHashCode());
+        Console.WriteLine("pessoa3 = " + pessoa3.GetHashCode());
+
+        Console.WriteLine("\nComparando objetos Pessoa - Equals");
+        Console.WriteLine("pessoa1.Equals(pessoa2)" + pessoa1.Equals(pessoa2));
+        Console.WriteLine("pessoa2.Equals(pessoa3)" + pessoa2.Equals(pessoa3));
+        Console.WriteLine("pessoa1.Equals(pessoa3)" + pessoa1.Equals(pessoa3));
     }
 }

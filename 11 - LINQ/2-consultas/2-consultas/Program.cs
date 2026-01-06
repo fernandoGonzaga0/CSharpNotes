@@ -29,4 +29,3 @@ Console.WriteLine(string.Join(" | ", resultado2));
 var listaNegra = FonteDados.GetListaNegra(); //16, 128, 512
 var resultado3 = numeros.Where( n => !listaNegra.Contains(n));
 Console.WriteLine(string.Join(" | ", resultado3));
-
