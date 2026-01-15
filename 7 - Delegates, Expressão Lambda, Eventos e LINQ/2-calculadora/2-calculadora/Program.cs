@@ -10,7 +10,7 @@ Console.WriteLine($"Multiplicação = {resultado1}");
 
 // 2° forma de chamada de delegate
 calc = Calculadora.Multiplicar;
-var resultado2 = calc.(20, 30);
+var resultado2 = calc(20, 30);
 Console.WriteLine($"Multiplicação = {resultado2}");
 
 // 3° forma de chamada de delegate
@@ -25,9 +25,9 @@ public delegate float DelegateCalculadora(float x, float y); // a assinatura dos
 
 
 /*
- 
-Por que usar? 
+
+Por que usar?
 
 Com delegate, conseguimos utilizar a mesma instância da classe Calculadora, nomeada de 'calc', e aplicar todos os métodos em momentos separados, ao invés de criar uma instância para cada método.
- 
+
 */

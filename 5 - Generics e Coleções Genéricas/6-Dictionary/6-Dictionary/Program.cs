@@ -1,6 +1,7 @@
 ﻿/*
  
-Dictionary<TKey,TValue> é uma classe que representa uma coleção do tipo chave/valor e implementa a interface IDictionary que possui duas coleções no seu interior, uma para guardar a chave e outra para guardar o valor. 
+Dictionary<TKey,TValue> é uma classe que representa uma coleção do tipo chave/valor e implementa a interface IDictionary que possui duas coleções no seu interior, 
+uma para guardar a chave e outra para guardar o valor. 
  
  Principais propriedades:
 
@@ -33,8 +34,10 @@ dicionario1.Add(3, 6);
 dicionario1.Add(4, 8);
 
 // usando TryAdd para tentar adicionar uma chave e valor no dicionário. Vamos atribuir na variável tentativa e receber true se der certo ou false se a chave já existir.
-var TentativaAddChave = dicionario1.TryAdd(1, 12); // false
-Console.WriteLine($"Foi possível inserir o valor no dicionário? {TentativaAddChave}");
+var TentativaAddChave = dicionario1.TryAdd(8, 12); // true
+var Tentativa2AddChave = dicionario1.TryAdd(4, 9); // false
+Console.WriteLine($"Foi possível inserir o primeiro valor no dicionário? {TentativaAddChave}");
+Console.WriteLine($"Foi possível inserir o segundo valor no dicionário? {Tentativa2AddChave}");
 
 // percorrendo o dicionário e exibindo todos os valores
 foreach (var item in dicionario1)
