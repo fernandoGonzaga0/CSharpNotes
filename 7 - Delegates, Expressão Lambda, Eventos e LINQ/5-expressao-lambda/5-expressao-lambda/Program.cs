@@ -1,22 +1,41 @@
 ﻿/*
 
-Uma expressão lambda é uma função anônima que pode ser usada para criar delegates ou expressões de árvores de expressão.
+As expressões lambda surgiram como uma evolução dos métodos anônimos, deixando o código mais legível, evitando a palavra DELEGATE e blocos desnecessários.
 
-É uma maneira mais curta de representar um método anônimo usando uma sintaxe especial (sugar syntax).
+São muito usadas em LINQ, eventos e callbacks.
 
-São usadas para escrever métodos in-line simples e rápidos, sem precisar criar um método nomeado separado. 
-
-Sintaxe: (parâmetros de entrada) => {expressão ou bloco de instrução};
- 
 */
 
-List<string> nomes = new List<string>();
-nomes.Add("Maria");
-nomes.Add("Paulo");
-nomes.Add("Carlos");
-nomes.Add("Sara");
+// EXEMPLO SEM LAMBDA
 
-// criando uma string resultado que receberá uma busca na lista por expressão lambda
-string? resultado = nomes.Find(nome => nome.Equals("Carlos"));
+class OperacaoSemLambda
+{
+    public delegate int Operacao(int x);
 
-Console.WriteLine(resultado);
+    static int Dobrar(int n) => n * 2;
+
+    // Main() desabilitado para manter apenas um no código
+    //static void Main()
+    //{
+    //    Operacao op = Dobrar;
+    //    Console.WriteLine(op(5)); 
+    //}
+
+    // aqui criamos um método chamado Dobrar e associamos ao delegate
+}
+
+// EXEMPLO COM LAMBDA
+
+class Program
+{
+    public delegate int Operacao(int x);
+
+    static void Main()
+    {
+        // usando expressão lambda, significa -> receba n e retorne n*2
+        Operacao op = (n => n * 2);
+        Console.WriteLine(op(5));
+
+        Console.ReadKey();
+    }
+}

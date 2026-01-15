@@ -1,53 +1,60 @@
 ﻿/*
 
-Um  método anônimo é aquele que não possui nome e que pode ser definida usando a palavra-chave delegate e pode ser atribuída a uma variável do tipo delegate. 
+Um  método anônimo é aquele que não possui nome e que pode ser definido usando a palavra-chave delegate e pode ser atribuída a uma variável do tipo delegate. 
 
 É usado para que não seja necessário criar um método e instanciá-lo para realizar sua chamada.
- 
+
+Útil quando a função é usada apenas uma vez.
+
+Na prática, o que muda?
+
+    i) Método nomeado: você precisa criar um método separado e depois associá-lo ao delegate.
+    ii) Método anônimo: você escreve a lógica diretamente no ponto de uso, sem criar um método extra.
+
 */
 
-public delegate void Imprimir(int valor);
-
-public class Program
-{
-    public static void Main()
-    {
-        Imprimir imp1 = delegate (int valor) // declarando um método anônimo usando a sintaxe delegate(int valor){...}
-        {
-            Console.WriteLine($"Método anônimo. Valor: {valor}");
-        };
-
-        imp1(240);
-
-        Console.ReadKey();
-    }
-}
-
-/*
-
-EXEMPLO SEM MÉTODO ANÔNIMO 
+// EXEMPLO COM MÉTODO ANÔNIMO
 
 using System;
 
-public delegate void Imprimir(int valor);
-
-public class Program
+class Program
 {
-    // Método nomeado compatível com o delegate
-    public static void MostrarValor(int valor)
+    // definição de um delegate
+    public delegate void MostrarMensagem(string msg);
+
+    static void Main()
     {
-        Console.WriteLine($"Método nomeado. Valor: {valor}");
+        // criando um método anônimo diretamente no delegate
+        MostrarMensagem handler = delegate(string texto)
+        {
+            Console.WriteLine(texto);
+        };
+
+        handler("Usando método anônimo!");
     }
+}
 
-    public static void Main()
-    {
-        // Referenciando o método nomeado
-        Imprimir imp1 = MostrarValor;
+// nesse caso, não é necessário criar o método Exibir, pois a lógica está embutida no delegate
 
-        imp1(240); // Invoca o método MostrarValor
+// EXEMPLO SEM MÉTODO ANÔNIMO 
 
-        Console.ReadKey();
-    }
-} 
- 
-*/
+//class Program
+//{
+//    // definição de um delegate
+//    public delegate void MostrarMensagem(string msg);
+
+//    // método "normal" que será usado pelo delegate
+//    static void Exibir(string texto)
+//    {
+//        Console.WriteLine(texto);
+//    }
+
+//    static void Main()
+//    {
+//        // associando o método ao delegate
+//        MostrarMensagem handler = Exibir;
+
+//        // chamando o delegate
+//        handler("Usando método nomeado!");
+//    }
+//}
