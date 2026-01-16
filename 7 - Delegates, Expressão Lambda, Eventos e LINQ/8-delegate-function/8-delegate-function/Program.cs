@@ -1,21 +1,40 @@
 ﻿/*
 
-O delegate Func encapsula um método que pode possuir de 0 até 16 parâmetros e que tem um tipo de retorno.
+O que é o delegate Func?
 
-Sintaxe -> delegate TResult Func<TInput, TOutput> | podendo ser até 16 entradas Func<int T1, in T2, ..., out TResult>(T1 arg1, T2 arg2, ...)>;
+    Func é um delegate genérico que permite o retorno de qualquer tipo.
 
-           T1,T2, ... - São os tipos dos argumentos do método encapsulado por este delegate.
-           TResult - É o tipo de retorno do método encapsulado por esse delegate.
- 
+Assinatura:
+
+    public delegate TResult Func<int T, out TResult>(T arg);
+
+    i) Func<T, TResult> -> recebe um parâmetro T e retorna TResult
+    ii) Existem variações até Func<T1, T2, ..., TResult> com até 16 parâmetros
+    iii) Sempre retorna algo, não pode ser void
+
+Por que existe?
+
+    Antes do Func, você teria que criar delegates personalizados para cada caso em que um método retornasse algum valor.
+
 */
 
-// Ex: programa que recebe um número do tipo double e calcula a raiz quadrada retornando um double usando delegate Func.
+// EXEMPLO SEM USAR FUNC
 
-Console.WriteLine("Diite um número");
-double numero = Convert.ToDouble(Console.ReadLine());
+    // Aqui criamos um delegate manualmente para representar um método que retorna algo
+    // Aqui criamos também o próprio delegate Operacao
 
-Func<double, double> raizQuadrada = x => Math.Sqrt(x); // delegate Func
+class Program
+{
+    public delegate int Operacao(int x);
 
-double resultado = raizQuadrada(numero);
+    static int Dobrar(int n)
+    {
+        return n * 2;
+    }
 
-Console.WriteLine($"A raiz quadrada de {numero} é: {resultado}");
+    static void Main()
+    {
+        Operacao op = Dobrar;
+        Console.WriteLine(op(5));
+    }
+}

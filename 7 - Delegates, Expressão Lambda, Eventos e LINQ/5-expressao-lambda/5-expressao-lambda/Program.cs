@@ -1,7 +1,6 @@
 ﻿/*
 
 As expressões lambda surgiram como uma evolução dos métodos anônimos, deixando o código mais legível, evitando a palavra DELEGATE e blocos desnecessários.
-
 São muito usadas em LINQ, eventos e callbacks.
 
 */

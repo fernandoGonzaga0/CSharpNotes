@@ -1,19 +1,53 @@
 ﻿/*
 
-Action é um delegate que representa um método que não retorna nenhum valor e pode receber de 1 a 16 argumentos do tipo T.
+O que é Delegate Action?
 
-Ele encapsula um método que não retorna nenhum valor (void) e pode receber de zero a 16 parâmetros de entrada.
+Action é um delegate genérico, se diferenciando por não retornar nada. Ele serve para representar métodos que executam uma ação, mas não precisam devolver resultado.
 
-Sintaxe: delegate void Action<in T>(T obj);
+Assinaturas possíveis:
+
+    Action -> não recebe parâmetros, não retorna nada
+    Action<T> -> recebe 1 parâmetro do tipo T, não retorna nada
+    Action<T1, T2, ...> ->  pode receber até 16 parâmetros, todos retornando void
+
+Por que existe?
+
+Antes do Action, era necessário criar delegates personalizados sempre que quisesse passar métodos que não retornam nada.
 
 */
 
-// Simplificando um código que dobra o valor de um número usando o delegate Action.
+// EXEMPLO SEM USAR ACTION
 
-Action<int> dobra = x => Console.WriteLine($"Dobro de {x} = " + x * 2); // se eu não fizesse isso, seria necessário criar um método avulso Duplicar() com a ação e depois chamar
+    // aqui criamos um delegate manualmente para representar um método que não retorna nada
 
-Console.WriteLine("Informe um número inteiro: ");
-int numero = Convert.ToInt32(Console.ReadLine());
-dobra(numero);
+//class Program
+//{
+//    // delegate manual
+//    public delegate void MostrarMensagem(string msg);
 
-Console.ReadKey();
+//    static void Exibir(string texto)
+//    {
+//        Console.WriteLine(texto);
+//    }
+
+//    static void Main()
+//    {
+//        MostrarMensagem handler = Exibir;
+//        handler("Usando delegate manual!");
+//    }
+//}
+
+// EXEMPLO COM ACTION
+    
+    // aqui não precisamos criar um delegate manual, o Action<string> já soluciona o cenário
+
+    class Program
+    {
+        static void Main()
+        {
+            // usando Action<string> 
+            Action<string> handler = (texto => Console.WriteLine(texto));
+
+            handler("Usando action!");
+        }
+    }
