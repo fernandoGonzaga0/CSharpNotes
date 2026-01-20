@@ -1,0 +1,51 @@
+O MVVM é um padrão de arquitetura de projeto criado em 2005 por John Gossman, inicialmente para o framework WPF.
+
+Atualmente usado em diversas tecnologias, como Angular, Vue, React, Flutter, SwiftUI, Jetpack Compose, etc.
+
+Objetivo principal: desacoplar a lógica de regras de negócio e manipulação de dados da interface do usuário, permitindo que os desenvolvedores trabalhem em diferentes partes da aplicação sem interferir uns nos outros, facilitando testes unitários e manutenção.
+
+Estrutura básica -> 
+
+		Model <-> ViewModel <-> View
+
+Definições:
+
+Model) Representa os dados da aplicação e a lógica de negócios. É responsável por acessar APIs, consultar bancos de dados, aplicar validações e regras do domínio.
+
+	i - evita depender da UI;
+	ii - centraliza regras de negócio
+	iii - mantém o Model independente do framework utilizado
+
+	Ex: 
+		export interface User {
+			id: number;
+			name: string;
+			email: string;
+		}
+
+View) É responsável apenas por exibir informações e interagir com o usuário. Ela observa o ViewModel e reage automaticamente às mudanças, sem precisar lidar com regras de negócio. 
+
+	i - não coloque a lógica de negócio aqui;
+	ii - use data binding sempre que possível;
+	iii - deixe a View "burra", focada apenas em apresentar dados
+
+	Ex: 
+		<Grid>
+			<Label>
+				Título da aplicação
+			</Label>
+		</Grid>
+
+ViewModel) O elo entre o Model e a View. Ele é responsável por preparar e transformar os dados vindos do Model para que possam ser exibidos na View. Em frameworks
+reativos, o ViewModel geralmente usa mecanismos como observables, reactive refs ou state hooks para notificar a View sobre mudanças, tornando desnecessária a captação local de dados inseridos na interface a cada instante. 
+
+	Ciclo de comunicação MVVM
+
+	i - o usuário interage com a View (clicando, digitando, etc.)
+	ii - a View envia comandos ao ViewModel;
+	iii - o ViewModel processa a ação e atualiza o Model, se necessário;
+	iv - o Model retorna novos dados;
+	v - o ViewModel notifica a View sobre a mudança;
+	vi - a View é atualizada automaticamente.
+
+	Esse ciclo cria uma camada de reatividade natural, evitando a manipulação direta do DOM e deixando a aplicação mais previsível.

@@ -7,7 +7,6 @@ ii) exibir no console os dados informados no array bem como o índice da linha e
  
 */
 
-
 public static class Program 
 {
     public static void Main()

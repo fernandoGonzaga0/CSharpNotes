@@ -1,0 +1,39 @@
+Níveis esperados:
+
+----- Estágio -----
+
+	1) C# é uma linguagem tipada, compilada e gerenciada. O que isso significa? 
+
+	R: tipada significa que os tipos são tratados restritamente de formas diferentes, não podendo ser relacionados diretamente, com risco de envio de exceptions 
+	(C# também é estaticamente tipada, sendo necessário informar explicitamente o tipo de cada dado utilizado no sistema: variáveis, parâmetros de funções, valores de 
+	retorno, etc.); compilada significa que o código é compilado para IL (intermediate language) pelo compilador .NET, esse IL é então convertido em código nativo pelo JIT (Just-in-time Compiler); gerenciada significa que o código é executado com apoio de um runtime (CLR), que recebe o código gerenciado e compila ele em código de máquina para execução.
+	
+	2) O que é IL (intermediate language)? 
+	
+	R: processo abaixo detalhando a compilação e onde a IL entra.
+
+		i) Escrita do Código Fonte: você escreve o programa em C# (código estaticamente tipado e de tipagem forte);
+
+		ii) Compilação para IL: compilador do C# (csc.exe) pega o código-fonte e o traduz para IL (intermediate language), também chamado de MSIL ou CIL,
+			esse IL é uma linguagem intermediária independente de plataforma, projetada para ser entendida pelo CLR (Common Language Runtime),
+			o resultado dessa compilação é um assembly (podendo ser .exe se for executável ou um .dll se for biblioteca);
+
+		iii) Armazenamento no Assembly: o assembly é um pacote que inclui IL (o código intermediário), metadados (descrição dos tipos, namespaces, referências),			manifesto (informações sobre a versão, dependências, identidade do assembly);
+
+		iv) Execução pelo CLR: quando você roda o programa, o CLR entra em ação: ele é o runtime gerenciado que oferece o JIT, gerenciamento de memória, segurança e verificação de dados, além de tratamento de exceções. 
+
+		v) JIT Compilation (Just-In-Time): o CLR não executa diretamente o IL, ele usa o JIT para traduzir o IL em código nativo de máquina (dependente da arquitetura: x86, x64, ARM). Esse processo acontece sob demanda: quando um método é chamado pela primeira vez, o JIT compila aquele método para código nativo; o código nativo é então armazenado em memória e usado nas próxmas chamadas, sem recompilar.
+
+		vi) Execução em código de máquina: após o JIT, o programa está em código nativo e roda diretamente no processador. O CLR continua supervisionando a execução, garantindo: coleta de lixo (liberação automática de memória); segurança de acesso; otimizações em tempo de execução.
+
+	3) O que são built-in types?
+
+	R: São tipos primitivos usados como base na linguagem, feitos em duas categorias: por valor (armazenados diretamente na memória da variável, ex: int, long, bool, decimal, byte); por referência (guardam apenas um ponteiro para o objeto real na memória heap: string, object, arrays).
+
+	4) O que são namespaces?
+
+	R: são divisões lógicas que organizam classes, structs, interfaces, enums e outros tipos dentro de um projeto. Ele funciona como um "pacote" ou "caixa de agrupamento" que evita conflitos de nomes e melhora a organização.
+
+	5) O que é o .NET?
+
+	R: plataforma de execução e desenvolvimento criada pela Microsoft (diferente do Visual Studio, que é o ambiente em si, a IDE). Ela inclui linguagens (C#, F#, VB.NET), bibliotecas (Framework Class Library, Generics, etc.), Runtime (CLR - Common Language Runtime). O .NET é quem realmente compila, traduz e executa o código que é escrito no Visual Studio.
